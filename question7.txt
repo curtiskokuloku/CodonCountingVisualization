@@ -1,0 +1,21 @@
+QUESTION:
+
+    Where is the largest discrepancy in amino acid counts between the coding sequences (correct frame
+    shift) and the whole genome sequence (random frame shift), and why?
+
+ANSWER:
+
+    Looking closely at the amino acid counts, the largest discrepancy is for Valine (Val):
+
+        - Val count in coding sequences: 1152
+        - Val count in whole genome: 548
+
+    Valine has a much higher count in the coding sequences compared to the whole genome.
+
+    The reasons for this discrepancy are:
+
+        - There are 4 codons encoding Valine (GTT, GTC, GTA, GTG)
+        - These Valine codons are more common in the correct reading frames of coding sequences,
+          leading to high Val usage
+        - The whole genome contains frameshift mutations disrupting Valine codons
+        - This lowers the Valine codon count in the non-coding regions of the whole genome

@@ -1,0 +1,548 @@
+INFO:__main__:Running the program on a small fake genome file...
+INFO:__main__:Counting codons in test_genome.fna
+INFO:__main__:Finished counting, saving results to test_genome.csv
+INFO:__main__:Running the program on a small fake genome file...
+INFO:__main__:Counting codons in test_genome.fna
+INFO:__main__:Finished counting, saving results to test_genome.csv
+INFO:__main__:Test passed!
+INFO:__main__:Running the program on a small fake genome file...
+INFO:__main__:Counting codons in test_genome.fna
+INFO:__main__:Finished counting, saving results to test_genome.csv
+INFO:__main__:Test passed!
+INFO:__main__:Generating CSV files...
+INFO:__main__:Counting codons in SARS-CoV-2_separate_genes.fna
+INFO:__main__:Finished counting, saving results to separate_gene.csv
+INFO:__main__:Generating CSV files...
+INFO:__main__:Counting codons in SARS-CoV-2_whole_genome.fna
+INFO:__main__:Finished counting, saving results to whole_genome.csv
+INFO:__main__:Generating codon usage barplot...
+ERROR:__main__:Error running program
+Traceback (most recent call last):
+  File "/Users/curtiskokuloku/Desktop/Year 3/csci5481/homework/homework01/generate_codons_barplot.py", line 56, in <module>
+    plot_codons(PNG_FILE)
+  File "/Users/curtiskokuloku/Desktop/Year 3/csci5481/homework/homework01/generate_codons_barplot.py", line 23, in plot_codons
+    LOGGER.info(f'Loading CSV files: {gene_csv_file}, {genome_csv_file}')
+UnboundLocalError: local variable 'gene_csv_file' referenced before assignment
+INFO:__main__:Generating codon usage barplot...
+ERROR:__main__:Error running program
+Traceback (most recent call last):
+  File "/Users/curtiskokuloku/Desktop/Year 3/csci5481/homework/homework01/generate_codons_barplot.py", line 56, in <module>
+    plot_codons(PNG_FILE)
+  File "/Users/curtiskokuloku/Desktop/Year 3/csci5481/homework/homework01/generate_codons_barplot.py", line 23, in plot_codons
+    gene_csv_file = pd.read_csv(GENE_CODON_CSV)                                                             # DataFrame of codon counts for separate genes
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 948, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 611, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1448, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1705, in _make_engine
+    self.handles = get_handle(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/pandas/io/common.py", line 863, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'separate_genes.csv'
+INFO:__main__:Generating CSV files...
+INFO:__main__:Counting codons in SARS-CoV-2_separate_genes.fna
+INFO:__main__:Finished counting, saving results to separate_genes.csv
+INFO:__main__:Generating codon usage barplot...
+INFO:__main__:Loading CSV files:    Codon  Count
+0    ATG    312
+1    GAG    186
+2    AGC     52
+3    CTT    400
+4    GTC    153
+..   ...    ...
+56   TCT    314
+57   AGA    211
+58   GCG     38
+59   CCG     21
+60   CGG     14
+
+[61 rows x 2 columns],    Codon  Count
+0    ATT    208
+1    AAA    303
+2    GGT    149
+3    TTA    232
+4    TAC    227
+..   ...    ...
+59   GGG     49
+60   CGC     40
+61   GCG     22
+62   ATG    117
+63   AAG    110
+
+[64 rows x 2 columns]
+INFO:__main__:Creating barplot to codon_counts.png
+INFO:__main__:Saved barplot to codon_counts.png
+INFO:__main__:Generating CSV files...
+INFO:__main__:Counting codons in SARS-CoV-2_separate_genes.fna
+INFO:__main__:Finished counting, saving results to separate_genes.csv
+INFO:__main__:Generating CSV files...
+INFO:__main__:Counting codons in SARS-CoV-2_separate_genes.fna
+INFO:__main__:Finished counting, saving results to separate_genes.csv
+INFO:__main__:Generating codon usage barplot...
+INFO:__main__:Loading CSV files:    Codon  Count
+0    ATG    312
+1    GAG    186
+2    AGC     52
+3    CTT    400
+4    GTC    153
+..   ...    ...
+56   TCT    314
+57   AGA    211
+58   GCG     38
+59   CCG     21
+60   CGG     14
+
+[61 rows x 2 columns],    Codon  Count
+0    ATT    208
+1    AAA    303
+2    GGT    149
+3    TTA    232
+4    TAC    227
+..   ...    ...
+59   GGG     49
+60   CGC     40
+61   GCG     22
+62   ATG    117
+63   AAG    110
+
+[64 rows x 2 columns]
+INFO:__main__:Creating barplot to codon_counts.png
+INFO:__main__:Saved barplot to codon_counts.png
+INFO:__main__:Generating CSV files...
+INFO:__main__:Counting codons in SARS-CoV-2_separate_genes.fna
+INFO:__main__:Finished counting, saving results to separate_genes.csv
+INFO:__main__:Generating CSV files...
+INFO:__main__:Counting codons in SARS-CoV-2_separate_genes.fna
+INFO:__main__:Finished counting, saving results to separate_genes.csv
+INFO:__main__:Generating CSV files...
+INFO:__main__:Counting codons in SARS-CoV-2_separate_genes.fna
+INFO:__main__:Finished counting, saving results to separate_genes.csv
+INFO:__main__:Generating CSV files...
+INFO:__main__:Counting codons in SARS-CoV-2_whole_genome.fna
+INFO:__main__:Finished counting, saving results to whole_genome.csv
+INFO:__main__:Generating CSV files...
+INFO:__main__:Counting codons in SARS-CoV-2_whole_genome.fna
+INFO:__main__:Finished counting, saving results to whole_genome.csv
+INFO:__main__:Generating CSV files...
+INFO:__main__:Counting codons in SARS-CoV-2_separate_genes.fna
+INFO:__main__:Finished counting, saving results to separate_genes.csv
+INFO:__main__:Generating CSV files...
+INFO:__main__:Counting codons in test_genome.fna
+INFO:__main__:Finished counting, saving results to test_genome.csv
+INFO:__main__:Generating CSV file...
+INFO:__main__:Counting codons in test_genome.fna
+INFO:__main__:Finished counting, saving results to test_genome.csv
+INFO:__main__:Generating CSV files...
+ERROR:__main__:Error running program
+Traceback (most recent call last):
+  File "/Users/curtiskokuloku/Desktop/Year 3/csci5481/homework/homework01/count_codons.py", line 173, in main
+    gene_codon_counts = count_codons("SARS-CoV-2_separate_genes.fna", "separate_genes.csv")
+TypeError: 'dict' object is not callable
+INFO:__main__:Generating CSV file...
+INFO:__main__:Counting codons in test_genome.fna
+INFO:__main__:Finished counting, saving results to test_genome.csv
+INFO:__main__:Generating CSV files...
+ERROR:__main__:Error running program
+Traceback (most recent call last):
+  File "/Users/curtiskokuloku/Desktop/Year 3/csci5481/homework/homework01/count_codons.py", line 192, in <module>
+    main()
+  File "/Users/curtiskokuloku/Desktop/Year 3/csci5481/homework/homework01/count_codons.py", line 174, in main
+    gene_codon_counts = count_codons("SARS-CoV-2_separate_genes.fna", "separate_genes.csv")
+TypeError: 'dict' object is not callable
+INFO:__main__:Generating CSV file...
+INFO:__main__:Counting codons in SARS-CoV-2_separate_genes.fna
+INFO:__main__:Finished counting, saving results to separate_genes.csv
+INFO:__main__:Generating CSV files...
+ERROR:__main__:Error running program
+Traceback (most recent call last):
+  File "/Users/curtiskokuloku/Desktop/Year 3/csci5481/homework/homework01/count_codons.py", line 192, in <module>
+    main()
+  File "/Users/curtiskokuloku/Desktop/Year 3/csci5481/homework/homework01/count_codons.py", line 174, in main
+    gene_codon_counts = count_codons("SARS-CoV-2_separate_genes.fna", "separate_genes.csv")
+TypeError: 'dict' object is not callable
+INFO:__main__:Generating CSV file...
+INFO:__main__:Counting codons in SARS-CoV-2_whole_genome.fna
+INFO:__main__:Finished counting, saving results to whole_genome.csv
+INFO:__main__:Generating CSV files...
+ERROR:__main__:Error running program
+Traceback (most recent call last):
+  File "/Users/curtiskokuloku/Desktop/Year 3/csci5481/homework/homework01/count_codons.py", line 192, in <module>
+    main()
+  File "/Users/curtiskokuloku/Desktop/Year 3/csci5481/homework/homework01/count_codons.py", line 174, in main
+    gene_codon_counts = count_codons("SARS-CoV-2_separate_genes.fna", "separate_genes.csv")
+TypeError: 'dict' object is not callable
+INFO:__main__:Generating CSV file...
+INFO:__main__:Counting codons in SARS-CoV-2_whole_genome.fna
+INFO:__main__:Finished counting, saving results to whole_genome.csv
+INFO:__main__:Generating CSV files...
+ERROR:__main__:Error running program
+Traceback (most recent call last):
+  File "/Users/curtiskokuloku/Desktop/Year 3/csci5481/homework/homework01/count_codons.py", line 192, in <module>
+    main()
+  File "/Users/curtiskokuloku/Desktop/Year 3/csci5481/homework/homework01/count_codons.py", line 174, in main
+    gene_codon_counts = count_codons("SARS-CoV-2_separate_genes.fna", "separate_genes.csv")
+TypeError: 'dict' object is not callable
+INFO:__main__:Generating CSV files...
+INFO:__main__:Generating Codon counts CSV file...
+INFO:__main__:Counting codons in count_codons.py
+INFO:__main__:Finished counting, saving results to SARS-CoV-2_whole_genome.fna
+INFO:__main__:Generating Codon counts CSV file...
+INFO:__main__:Counting codons in count_codons.py
+INFO:__main__:Finished counting, saving results to SARS-CoV-2_separate_genes.fna
+INFO:__main__:Generating Codon counts CSV file...
+INFO:__main__:Counting codons in SARS-CoV-2_separate_genes.fna
+INFO:__main__:Finished counting, saving results to separate_genes.csv
+INFO:__main__:Generating Codon counts CSV file...
+INFO:__main__:Counting codons in SARS-CoV-2_whole_genome.fna
+INFO:__main__:Finished counting, saving results to whole_genome.csv
+INFO:__main__:Running the entire program...
+INFO:__main__:Generating CSV files...
+INFO:__main__:Counting codons in SARS-CoV-2_separate_genes.fna
+INFO:__main__:Finished counting, saving results to separate_genes.csv
+INFO:__main__:Counting codons in SARS-CoV-2_whole_genome.fna
+INFO:__main__:Finished counting, saving results to whole_genome.csv
+INFO:__main__:Generating codon usage barplot...
+INFO:__main__:Loading CSV files:    Codon  Count
+0    ATG    312
+1    GAG    186
+2    AGC     52
+3    CTT    400
+4    GTC    153
+..   ...    ...
+56   TCT    314
+57   AGA    211
+58   GCG     38
+59   CCG     21
+60   CGG     14
+
+[61 rows x 2 columns],    Codon  Count
+0    ATT    208
+1    AAA    303
+2    GGT    149
+3    TTA    232
+4    TAC    227
+..   ...    ...
+59   GGG     49
+60   CGC     40
+61   GCG     22
+62   ATG    117
+63   AAG    110
+
+[64 rows x 2 columns]
+INFO:__main__:Saved plot to codon_counts.png
+INFO:__main__:Converting codons to amino acid...
+INFO:__main__:Generating amino acid CSV files...
+INFO:__main__:Counting amino acid in Codon Counts Dictionary
+INFO:__main__:Saved amino acid counts to gene_amino_counts.csv
+INFO:__main__:Counting amino acid in Codon Counts Dictionary
+INFO:__main__:Saved amino acid counts to genome_amino_counts.csv
+INFO:__main__:Generating amino acid usage barplot...
+INFO:__main__:Loading CSV files:    Amino Acid  Count
+0         Met    312
+1         Glu    681
+2         Ser    938
+3         Leu   1365
+4         Val   1152
+5         Phe   1266
+6         Gly    840
+7         Asn    765
+8         Lys    838
+9         Thr   1063
+10        His    264
+11        Gln    516
+12        Arg    414
+13        Asp    722
+14        Ala    967
+15        Cys    451
+16        Tyr    643
+17        Ile    728
+18        Trp    157
+19        Agr     67,    Amino Acid  Count
+0         Ile    436
+1         Lys    413
+2         Gly    394
+3         Leu    886
+4         Tyr    505
+5         Phe    885
+6         Agr    123
+7        stop    774
+8         Gln    325
+9         Thr    679
+10        Asn    472
+11        Cys    669
+12        Ser    776
+13        Arg    435
+14        Val    548
+15        Ala    375
+16        His    332
+17        Asp    290
+18        Glu    270
+19        Trp    263
+20        Met    117
+INFO:__main__:Saved amino acid plot to amino_acids_counts.png
+INFO:__main__:Generating Codon counts CSV file...
+INFO:__main__:Counting codons in SARS-CoV-2_whole_genome.fna
+INFO:__main__:Finished counting, saving results to whole_genome.csv
+INFO:__main__:Generating Codon counts CSV file...
+INFO:__main__:Counting codons in SARS-CoV-2_separate_genes.fna
+INFO:__main__:Finished counting, saving results to separate_genes.csv
+INFO:__main__:Running the entire program...
+INFO:__main__:Generating CSV files...
+INFO:__main__:Counting codons in SARS-CoV-2_separate_genes.fna
+INFO:__main__:Finished counting, saving results to separate_genes.csv
+INFO:__main__:Counting codons in SARS-CoV-2_whole_genome.fna
+INFO:__main__:Finished counting, saving results to whole_genome.csv
+INFO:__main__:Generating codon usage barplot...
+INFO:__main__:Loading CSV files:    Codon  Count
+0    ATG    312
+1    GAG    186
+2    AGC     52
+3    CTT    400
+4    GTC    153
+..   ...    ...
+56   TCT    314
+57   AGA    211
+58   GCG     38
+59   CCG     21
+60   CGG     14
+
+[61 rows x 2 columns],    Codon  Count
+0    ATT    208
+1    AAA    303
+2    GGT    149
+3    TTA    232
+4    TAC    227
+..   ...    ...
+59   GGG     49
+60   CGC     40
+61   GCG     22
+62   ATG    117
+63   AAG    110
+
+[64 rows x 2 columns]
+INFO:__main__:Saved plot to codon_counts.png
+INFO:__main__:Converting codons to amino acid...
+INFO:__main__:Generating amino acid CSV files...
+INFO:__main__:Counting amino acid in Codon Counts Dictionary
+INFO:__main__:Saved amino acid counts to gene_amino_counts.csv
+INFO:__main__:Counting amino acid in Codon Counts Dictionary
+INFO:__main__:Saved amino acid counts to genome_amino_counts.csv
+INFO:__main__:Generating amino acid usage barplot...
+INFO:__main__:Loading CSV files:    Amino Acid  Count
+0         Met    312
+1         Glu    681
+2         Ser    938
+3         Leu   1365
+4         Val   1152
+5         Phe   1266
+6         Gly    840
+7         Asn    765
+8         Lys    838
+9         Thr   1063
+10        His    264
+11        Gln    516
+12        Arg    414
+13        Asp    722
+14        Ala    967
+15        Cys    451
+16        Tyr    643
+17        Ile    728
+18        Trp    157
+19        Agr     67,    Amino Acid  Count
+0         Ile    436
+1         Lys    413
+2         Gly    394
+3         Leu    886
+4         Tyr    505
+5         Phe    885
+6         Agr    123
+7        stop    774
+8         Gln    325
+9         Thr    679
+10        Asn    472
+11        Cys    669
+12        Ser    776
+13        Arg    435
+14        Val    548
+15        Ala    375
+16        His    332
+17        Asp    290
+18        Glu    270
+19        Trp    263
+20        Met    117
+INFO:__main__:Saved amino acid plot to amino_acids_counts.png
+INFO:__main__:Running the entire program...
+INFO:__main__:Generating CSV files...
+INFO:__main__:Counting codons in SARS-CoV-2_separate_genes.fna
+INFO:__main__:Finished counting, saving results to separate_genes.csv
+INFO:__main__:Counting codons in SARS-CoV-2_whole_genome.fna
+INFO:__main__:Finished counting, saving results to whole_genome.csv
+INFO:__main__:Generating codon usage barplot...
+INFO:__main__:Loading CSV files:    Codon  Count
+0    ATG    312
+1    GAG    186
+2    AGC     52
+3    CTT    400
+4    GTC    153
+..   ...    ...
+56   TCT    314
+57   AGA    211
+58   GCG     38
+59   CCG     21
+60   CGG     14
+
+[61 rows x 2 columns],    Codon  Count
+0    ATT    208
+1    AAA    303
+2    GGT    149
+3    TTA    232
+4    TAC    227
+..   ...    ...
+59   GGG     49
+60   CGC     40
+61   GCG     22
+62   ATG    117
+63   AAG    110
+
+[64 rows x 2 columns]
+INFO:__main__:Saved plot to codon_counts.png
+INFO:__main__:Converting codons to amino acid...
+INFO:__main__:Generating amino acid CSV files...
+INFO:__main__:Counting amino acid in Codon Counts Dictionary
+INFO:__main__:Saved amino acid counts to gene_amino_counts.csv
+INFO:__main__:Counting amino acid in Codon Counts Dictionary
+INFO:__main__:Saved amino acid counts to genome_amino_counts.csv
+INFO:__main__:Generating amino acid usage barplot...
+INFO:__main__:Loading CSV files:    Amino Acid  Count
+0         Met    312
+1         Glu    681
+2         Ser    938
+3         Leu   1365
+4         Val   1152
+5         Phe   1266
+6         Gly    840
+7         Asn    765
+8         Lys    838
+9         Thr   1063
+10        His    264
+11        Gln    516
+12        Arg    414
+13        Asp    722
+14        Ala    967
+15        Cys    451
+16        Tyr    643
+17        Ile    728
+18        Trp    157
+19        Agr     67,    Amino Acid  Count
+0         Ile    436
+1         Lys    413
+2         Gly    394
+3         Leu    886
+4         Tyr    505
+5         Phe    885
+6         Agr    123
+7        stop    774
+8         Gln    325
+9         Thr    679
+10        Asn    472
+11        Cys    669
+12        Ser    776
+13        Arg    435
+14        Val    548
+15        Ala    375
+16        His    332
+17        Asp    290
+18        Glu    270
+19        Trp    263
+20        Met    117
+INFO:__main__:Saved amino acid plot to amino_acids_counts.png
+INFO:__main__:Running the entire program...
+INFO:__main__:Running the program on a small fake genome file...
+INFO:__main__:Counting codons in test_genome.fna
+INFO:__main__:Finished counting, saving results to test_genome.csv
+INFO:__main__:Generating CSV files...
+INFO:__main__:Counting codons in SARS-CoV-2_separate_genes.fna
+INFO:__main__:Finished counting, saving results to separate_genes.csv
+INFO:__main__:Counting codons in SARS-CoV-2_whole_genome.fna
+INFO:__main__:Finished counting, saving results to whole_genome.csv
+INFO:__main__:Generating codon usage barplot...
+INFO:__main__:Loading CSV files:    Codon  Count
+0    ATG    312
+1    GAG    186
+2    AGC     52
+3    CTT    400
+4    GTC    153
+..   ...    ...
+56   TCT    314
+57   AGA    211
+58   GCG     38
+59   CCG     21
+60   CGG     14
+
+[61 rows x 2 columns],    Codon  Count
+0    ATT    208
+1    AAA    303
+2    GGT    149
+3    TTA    232
+4    TAC    227
+..   ...    ...
+59   GGG     49
+60   CGC     40
+61   GCG     22
+62   ATG    117
+63   AAG    110
+
+[64 rows x 2 columns]
+INFO:__main__:Saved plot to codon_counts.png
+INFO:__main__:Converting codons to amino acid...
+INFO:__main__:Generating amino acid CSV files...
+INFO:__main__:Counting amino acid in Codon Counts Dictionary
+INFO:__main__:Saved amino acid counts to gene_amino_counts.csv
+INFO:__main__:Counting amino acid in Codon Counts Dictionary
+INFO:__main__:Saved amino acid counts to genome_amino_counts.csv
+INFO:__main__:Generating amino acid usage barplot...
+INFO:__main__:Loading CSV files:    Amino Acid  Count
+0         Met    312
+1         Glu    681
+2         Ser    938
+3         Leu   1365
+4         Val   1152
+5         Phe   1266
+6         Gly    840
+7         Asn    765
+8         Lys    838
+9         Thr   1063
+10        His    264
+11        Gln    516
+12        Arg    414
+13        Asp    722
+14        Ala    967
+15        Cys    451
+16        Tyr    643
+17        Ile    728
+18        Trp    157
+19        Agr     67,    Amino Acid  Count
+0         Ile    436
+1         Lys    413
+2         Gly    394
+3         Leu    886
+4         Tyr    505
+5         Phe    885
+6         Agr    123
+7        stop    774
+8         Gln    325
+9         Thr    679
+10        Asn    472
+11        Cys    669
+12        Ser    776
+13        Arg    435
+14        Val    548
+15        Ala    375
+16        His    332
+17        Asp    290
+18        Glu    270
+19        Trp    263
+20        Met    117
+INFO:__main__:Saved amino acid plot to amino_acids_counts.png
